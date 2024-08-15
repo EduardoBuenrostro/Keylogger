@@ -4,7 +4,7 @@ El proyecto es un keylogger básico programado en C que captura las pulsaciones 
 
 ## Descripción
 
-  1. **Identifica el Dispositivo del Teclado:** Utiliza comandos de sistema para encontrar el dispositivo del teclado en /dev/input/.
+  1. **Identifica el Dispositivo del Teclado:** Utiliza comandos de sistema para encontrar el dispositivo del teclado en ```/dev/input/```.
   2. **Lee Eventos de Teclado:** Se suscribe a eventos de teclado y filtra solo los eventos de liberación de tecla (ev.value == 0).
   3. **Registra las Teclas:** Mediante un mapeo de las claves ubicadas en /usr/include/linux/input-event-codes.h traduce los códigos de tecla en nombres legibles y los escribe en un archivo de registro (keylogger.txt).
 
